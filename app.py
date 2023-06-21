@@ -1487,10 +1487,10 @@ def write_files(lst_write):
             # blob_client.upload_blob(lst_write[i], blob_type="BlockBlob", overwrite=True)
             if i<2:
                 x = ".csv"
-                blob_client = blob_service_client.get_blob_client(container=container, blob="analysed/HR_analysedfile/"+container+"_HR_analysed_file"+lst_write2[i]+x)
+                blob_client = blob_service_client.get_blob_client(container=container, blob="analysed/HR_analysedfile/"+keyword+container+"_HR_analysed_file"+lst_write2[i]+x)
                 blob_client.upload_blob(lst_write[i], blob_type="BlockBlob", overwrite=True)
             else:
-                blob_client = blob_service_client.get_blob_client(container=container, blob="analysed/HR_analysedfile/"+container+"_HR_analysed_file"+lst_write2[i])
+                blob_client = blob_service_client.get_blob_client(container=container, blob="analysed/HR_analysedfile/"+keyword+container+"_HR_analysed_file"+lst_write2[i])
                 blob_client.upload_blob(lst_write[i], blob_type="BlockBlob", overwrite=True)
             # if i<2:
             #     blob_client = blob_service_client.get_blob_client(container=container, blob="analysedfile/"+container+"_focus_analysed_file"+lst_write2[i])
@@ -1752,7 +1752,7 @@ def analysis_fi_HR1():
         op2 = OP_LIST[j][1]
         op3 = OP_LIST[j][2]
         lst_write = [op1,op2,op3]
-        #write_files(lst_write)
+        write_files(lst_write)
         
     # op1 = df.to_csv(encoding= "utf-8")
     # summary = pd.DataFrame(summary, index=[0])
