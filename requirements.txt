@@ -1,4 +1,4 @@
-uestsflask
+Flask
 Flask-SQLAlchemy
 Flask-Login
 pandas
@@ -11,7 +11,8 @@ numpy
 azure-storage-blob
 datetime
 openpyxl
-
+https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.5.0/en_core_web_lg-3.5.0.tar.gz
+PyMuPDF
 
 
 
