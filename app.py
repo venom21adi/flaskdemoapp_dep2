@@ -16,8 +16,7 @@ import openpyxl
 import numpy as np
 
 import re
-import requests
-import fitz
+
 pd.options.display.max_colwidth = 120
 pd.set_option('display.max_colwidth', None)
 
@@ -1071,7 +1070,7 @@ def dashboard_creation2(dataframe_file):
     lst_master =[op4,op5,op6,op7,op8,op9]
     return lst_master
 
-import fitz
+
 #----------------------------------------------------------------------------    
 
 
