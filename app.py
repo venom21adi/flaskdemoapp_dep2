@@ -15,7 +15,7 @@ import pandas as pd
 import openpyxl
 import numpy as np
 import fitz
-
+import requests
 import re
 
 pd.options.display.max_colwidth = 120
