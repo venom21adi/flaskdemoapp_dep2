@@ -1410,10 +1410,9 @@ def generate_SAS():
         if session["flag"] == "survey":
             df = pd.ExcelFile(sas_url)
         elif session["flag"] == "HR":
-            pass
-            #mem_area =requests.get(sas_url)
-            #stage_file = mem_area.content
-            #df = fitz.open(stream=stage_file, filetype="pdf")
+            mem_area =requests.get(sas_url)
+            stage_file = mem_area.content
+            df = fitz.open(stream=stage_file, filetype="pdf")
             #stage_file= urllib.request.urlopen(sas_url)
             #df = fitz.open(stage_file)
             #df =stage_file
