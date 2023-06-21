@@ -1,0 +1,27 @@
+<html>  
+<head>  
+<title>success</title>
+<meta http-equiv = "refresh" content = "5; url = /analysis" />  
+</head>  
+<body>
+<div >
+	<div id="mydiv">
+			<p > File is being saved</p>
+	</div>
+	<div id="div1" style="visibility:hidden;"  action = "/success" method ="post">
+
+			<p> File is saved sucessfully. {{name}}</p>  
+	</div>
+</div>
+</body>  
+</html> 
+<script>
+
+setTimeout(function(){
+document.getElementById('div1').style.visibility = "visible";
+},3000);
+
+setTimeout(function(){
+document.getElementById('mydiv').style.visibility = "hidden";
+},3000);
+</script>
